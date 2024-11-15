@@ -60,12 +60,11 @@ def webhook():
     update = telebot.types.Update.de_json(json_str)
     bot.process_new_updates([update])
     return 'OK', 200
-    #bot.infinity_polling()
-    #return ("Bot is up and running")
+    
 
 
 def set_webhook():
-    webhook_url = 'https://your-vercel-project.vercel.app/api/webhook'
+    webhook_url = ''
     response = requests.get(
         f'https://api.telegram.org/bot{os.getenv("TELEGRAM_API_KEY")}/setWebhook?url={webhook_url}'
     )
