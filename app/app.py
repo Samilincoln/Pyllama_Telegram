@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 load_dotenv()
 API_KEY = os.environ.get("TELEGRAM_API_KEY")
-#client = Groq(api_key="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")
+
 
 def get_groq_response(content):
     client = Groq(api_key=os.environ.get("GROQ_API_KEY"),)
