@@ -64,7 +64,7 @@ def webhook():
 
 
 def set_webhook():
-    webhook_url = 'https://your-vercel-project.vercel.app/api/webhook'
+    webhook_url = ''
     response = requests.get(
         f'https://api.telegram.org/bot{os.getenv("TELEGRAM_API_KEY")}/setWebhook?url={webhook_url}'
     )
