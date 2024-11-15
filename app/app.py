@@ -16,7 +16,7 @@ API_KEY = os.environ.get("TELEGRAM_API_KEY")
 def get_groq_response(content):
     client = Groq(api_key=os.environ.get("GROQ_API_KEY"),)
 
-    #jsn_content = json.dumps(content)
+    
 
     chat_completion = client.chat.completions.create(
         messages=[
