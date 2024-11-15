@@ -37,18 +37,6 @@ PyLLaMa Bot is a Telegram bot integrated with the Groq API, designed to provide 
     To test the bot locally:
    ```bash
    python app.py
+   or 
+   flask run
    ```
-5. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-   ```
-
-
-
-3. Create a .env file in the root directory with your API keys:
-
-```env
-
-TELEGRAM_API_KEY=your-telegram-bot-api-key
-GROQ_API_KEY=your-groq-api-key```
